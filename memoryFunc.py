@@ -17,7 +17,7 @@ def getMem():
             break
         key = line.split(':')[0].strip() # Get description of numerical value
         value = line.split(':')[1].strip().split()[0] #Get numerical value only
-        meminfo[key] = int(value)/1024  #convert kb to mb
+        meminfo[key] = f'{round((int(value)/1024), 2)} mb' #convert kb to mb and round to nearest 10
     f.close()
     return meminfo
 
