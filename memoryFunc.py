@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import os
+
 
 '''
 The getMem function will parse through the data in /proc/meminfo by opening and
